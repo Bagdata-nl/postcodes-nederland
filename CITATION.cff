@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Gebruik je deze dataset in een publicatie, verwijs er dan zo naar."
+title: "Postcodes Nederland (PC4)"
+type: dataset
+authors:
+  - name: "BAGdata.nl"
+    website: "https://bagdata.nl/"
+version: "2026-11-10_cbs2024"
+date-released: "2026-11-10"
+url: "https://bagdata.nl/"
+repository-code: "https://github.com/Bagdata-nl/postcodes-nederland"
+license: CC0-1.0
+keywords:
+  - postcode
+  - pc4
+  - nederland
+  - bag

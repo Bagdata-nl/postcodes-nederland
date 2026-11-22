@@ -1,0 +1,331 @@
+{
+  "name": "postcodes-nederland-pc4",
+  "title": "Postcodes Nederland (PC4)",
+  "description": "Alle Nederlandse postcodegebieden op vier cijfers met woonplaats, gemeente, provincie en coördinaten uit de BAG, en kerncijfers van het CBS.",
+  "version": "2026-11-10_cbs2024",
+  "created": "2026-11-10T10:34:55Z",
+  "homepage": "https://bagdata.nl/",
+  "keywords": [
+    "postcode",
+    "postcodes",
+    "pc4",
+    "nederland",
+    "netherlands",
+    "bag",
+    "open data"
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "BAG, Kadaster (peildatum 2026-11-10)",
+      "path": "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag"
+    },
+    {
+      "title": "CBS, Kerncijfers per postcode 2024",
+      "path": "https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/gegevens-per-postcode"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "BAGdata.nl",
+      "path": "https://bagdata.nl/",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "pc4",
+      "path": "data/pc4.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "licenses": [
+        {
+          "name": "CC0-1.0",
+          "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "postcode4",
+            "type": "string",
+            "description": "Postcode op vier cijfers"
+          },
+          {
+            "name": "woonplaats",
+            "type": "string",
+            "description": "Woonplaats met de meeste adressen in het gebied"
+          },
+          {
+            "name": "woonplaatsId",
+            "type": "string",
+            "description": "BAG-code van die woonplaats"
+          },
+          {
+            "name": "gemeenteCode",
+            "type": "string",
+            "description": "Gemeentecode van het CBS (vier cijfers)"
+          },
+          {
+            "name": "gemeente",
+            "type": "string",
+            "description": "Gemeente met de meeste adressen in het gebied"
+          },
+          {
+            "name": "provincieCode",
+            "type": "string",
+            "description": "Provinciecode (PV20 t/m PV31)"
+          },
+          {
+            "name": "provincie",
+            "type": "string",
+            "description": "Provincie"
+          },
+          {
+            "name": "aantalWoonplaatsen",
+            "type": "integer",
+            "description": "Over hoeveel woonplaatsen het gebied valt"
+          },
+          {
+            "name": "aantalPostcodes",
+            "type": "integer",
+            "description": "Aantal postcodes op zes posities in het gebied"
+          },
+          {
+            "name": "aantalAdressen",
+            "type": "integer",
+            "description": "Aantal adressen (nummeraanduidingen)"
+          },
+          {
+            "name": "aantalWoningen",
+            "type": "integer",
+            "description": "Aantal verblijfsobjecten met een woonfunctie"
+          },
+          {
+            "name": "lat",
+            "type": "number",
+            "description": "Breedtegraad van het midden van de adressen, WGS84"
+          },
+          {
+            "name": "lon",
+            "type": "number",
+            "description": "Lengtegraad van het midden van de adressen, WGS84"
+          },
+          {
+            "name": "rdX",
+            "type": "number",
+            "description": "X van hetzelfde punt in Rijksdriehoek (EPSG:28992), meters"
+          },
+          {
+            "name": "rdY",
+            "type": "number",
+            "description": "Y van hetzelfde punt in Rijksdriehoek (EPSG:28992), meters"
+          }
+        ],
+        "primaryKey": "postcode4"
+      }
+    },
+    {
+      "name": "pc4-json",
+      "path": "data/pc4.json",
+      "format": "json",
+      "mediatype": "application/json"
+    },
+    {
+      "name": "pc4-geojson",
+      "path": "data/pc4.geojson",
+      "format": "geojson",
+      "mediatype": "application/geo+json"
+    },
+    {
+      "name": "pc4-cbs",
+      "path": "data/pc4-cbs.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "postcode4",
+            "type": "string",
+            "description": "Postcode op vier cijfers"
+          },
+          {
+            "name": "woonplaats",
+            "type": "string",
+            "description": "Woonplaats met de meeste adressen in het gebied"
+          },
+          {
+            "name": "woonplaatsId",
+            "type": "string",
+            "description": "BAG-code van die woonplaats"
+          },
+          {
+            "name": "gemeenteCode",
+            "type": "string",
+            "description": "Gemeentecode van het CBS (vier cijfers)"
+          },
+          {
+            "name": "gemeente",
+            "type": "string",
+            "description": "Gemeente met de meeste adressen in het gebied"
+          },
+          {
+            "name": "provincieCode",
+            "type": "string",
+            "description": "Provinciecode (PV20 t/m PV31)"
+          },
+          {
+            "name": "provincie",
+            "type": "string",
+            "description": "Provincie"
+          },
+          {
+            "name": "aantalWoonplaatsen",
+            "type": "integer",
+            "description": "Over hoeveel woonplaatsen het gebied valt"
+          },
+          {
+            "name": "aantalPostcodes",
+            "type": "integer",
+            "description": "Aantal postcodes op zes posities in het gebied"
+          },
+          {
+            "name": "aantalAdressen",
+            "type": "integer",
+            "description": "Aantal adressen (nummeraanduidingen)"
+          },
+          {
+            "name": "aantalWoningen",
+            "type": "integer",
+            "description": "Aantal verblijfsobjecten met een woonfunctie"
+          },
+          {
+            "name": "lat",
+            "type": "number",
+            "description": "Breedtegraad van het midden van de adressen, WGS84"
+          },
+          {
+            "name": "lon",
+            "type": "number",
+            "description": "Lengtegraad van het midden van de adressen, WGS84"
+          },
+          {
+            "name": "rdX",
+            "type": "number",
+            "description": "X van hetzelfde punt in Rijksdriehoek (EPSG:28992), meters"
+          },
+          {
+            "name": "rdY",
+            "type": "number",
+            "description": "Y van hetzelfde punt in Rijksdriehoek (EPSG:28992), meters"
+          },
+          {
+            "name": "inwoners",
+            "type": "integer",
+            "description": "Aantal inwoners"
+          },
+          {
+            "name": "mannen",
+            "type": "integer",
+            "description": "Aantal mannen"
+          },
+          {
+            "name": "vrouwen",
+            "type": "integer",
+            "description": "Aantal vrouwen"
+          },
+          {
+            "name": "inwoners0tot15",
+            "type": "integer",
+            "description": "Inwoners van 0 t/m 14 jaar"
+          },
+          {
+            "name": "inwoners15tot25",
+            "type": "integer",
+            "description": "Inwoners van 15 t/m 24 jaar"
+          },
+          {
+            "name": "inwoners25tot45",
+            "type": "integer",
+            "description": "Inwoners van 25 t/m 44 jaar"
+          },
+          {
+            "name": "inwoners45tot65",
+            "type": "integer",
+            "description": "Inwoners van 45 t/m 64 jaar"
+          },
+          {
+            "name": "inwoners65plus",
+            "type": "integer",
+            "description": "Inwoners van 65 jaar en ouder"
+          },
+          {
+            "name": "huishoudens",
+            "type": "integer",
+            "description": "Aantal particuliere huishoudens"
+          },
+          {
+            "name": "eenpersoonshuishoudens",
+            "type": "integer",
+            "description": "Aantal eenpersoonshuishoudens"
+          },
+          {
+            "name": "huishoudensMetKinderen",
+            "type": "integer",
+            "description": "Eenouder- plus tweeouderhuishoudens"
+          },
+          {
+            "name": "gemHuishoudensgrootte",
+            "type": "number",
+            "description": "Gemiddelde grootte van een huishouden"
+          },
+          {
+            "name": "gemWozWaarde",
+            "type": "integer",
+            "description": "Gemiddelde WOZ-waarde van een woning, in euro"
+          },
+          {
+            "name": "percKoopwoningen",
+            "type": "number",
+            "description": "Aandeel koopwoningen, in procenten"
+          },
+          {
+            "name": "percHuurwoningen",
+            "type": "number",
+            "description": "Aandeel huurwoningen, in procenten"
+          },
+          {
+            "name": "stedelijkheid",
+            "type": "integer",
+            "description": "1 (zeer sterk stedelijk) t/m 5 (niet stedelijk)"
+          },
+          {
+            "name": "cbsJaar",
+            "type": "integer",
+            "description": "Het jaar van de CBS-cijfers"
+          }
+        ],
+        "primaryKey": "postcode4"
+      }
+    },
+    {
+      "name": "pc4-cbs-json",
+      "path": "data/pc4-cbs.json",
+      "format": "json",
+      "mediatype": "application/json"
+    }
+  ]
+}
